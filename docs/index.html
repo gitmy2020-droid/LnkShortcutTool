@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LnkShortcutTool - Security Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f6fa;
+            margin: 0;
+            padding: 0;
+            color: #2c3e50;
+        }
+        header {
+            background: #34495e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 1em;
+            color: #ecf0f1;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #34495e;
+        }
+        code {
+            background: #ecf0f1;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #34495e;
+            color: white;
+            font-size: 0.9em;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>LnkShortcutTool</h1>
+    <p>Version 1.0 | Security Research Tool for creating LNK shortcuts</p>
+    <p>Author: Security Research Team</p>
+</header>
+
+<main>
+    <section>
+        <h2>About This Project</h2>
+        <p>
+            <strong>LnkShortcutTool</strong> is a professional tool for creating Windows LNK shortcuts for security testing and penetration testing purposes.
+            This project provides both a command-line interface (CLI) and a graphical user interface (GUI) for creating shortcuts pointing to SMB servers.
+        </p>
+    </section>
+
+    <section>
+        <h2>Features</h2>
+        <ul>
+            <li>Create Windows <code>.lnk</code> shortcuts easily.</li>
+            <li>Supports specifying SMB server IP, shared folder, and target file.</li>
+            <li>Customizable icon for the shortcut.</li>
+            <li>Graphical User Interface (GUI) for ease of use.</li>
+            <li>Command-Line Interface (CLI) for automation.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Usage</h2>
+        <h3>GUI Mode</h3>
+        <p>Simply run the program without arguments:</p>
+        <code>python main.py</code>
+
+        <h3>CLI Mode</h3>
+        <p>Run with arguments:</p>
+        <code>
+            python main.py -path "C:\path\to\save" -ip "192.168.1.100" -share "SharedFolder" -file "example.exe" -icon "icon.ico"
+        </code>
+    </section>
+
+    <section>
+        <h2>Installation</h2>
+        <p>
+            Install required dependencies via pip:
+        </p>
+        <code>pip install pywin32</code>
+        <p>
+            Then run the program:
+        </p>
+        <code>python main.py</code>
+    </section>
+
+    <section>
+        <h2>License</h2>
+        <p>
+            This project is for <strong>educational and security testing purposes only</strong>.
+            Use responsibly and only on systems you own or have explicit permission to test.
+        </p>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 Security Research Team | <a href="https://github.com/gitmy2020-droid/Cryptology">View Project on GitHub</a>
+</footer>
+
+</body>
+</html>
